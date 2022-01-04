@@ -1,6 +1,7 @@
 ---
-title: "Contact"
+title: "Contattaci"
 logo: "/img/logo.svg"
+type: "page"
 contact_entries:
   - heading: Location
     text: "3153 Lynn Avenue, South San Francisco, California 94080"
