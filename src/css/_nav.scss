@@ -131,10 +131,10 @@
             margin: 0 auto;
 
             ul {
-                display: flex;
                 align-items: center;
                 height: 100%;
                 padding: 0;
+                flex-wrap: nowrap;
 
                 li {
                     margin: 0 30px;
