@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1rem;
+
+    h4 {
+        margin-bottom: 8px;
+    }
+
+    > * {
+        flex-basis: 100%;
+
+        &:not(:last-of-type) {
+            margin-bottom: var(--spacing-large);
+        }
+    }
+
+    .social {
+        &-list {
+            margin-top: 12px;
+        }
+
+        svg {
+            margin-right: 15px;
+        }
+    }
+
+    .eapps-remove-link {
+      display: none !important;
+    }
+
+    @media (--breakpoint-large) {
+        flex-wrap: nowrap;
+
+        > * {
+            flex-basis: 33.4%;
+            margin-bottom: 0;
+        }
+    }
+}
