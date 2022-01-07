@@ -2,11 +2,15 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "short-text" .Params.blurb}}
+<div class="bg-grey-1 pv4 ph3">
+    {{ partial "media-block-reverse" (dict "heading" .Params.values.heading "text" .Params.values.text) }}
+</div>
+
+<!-- {{ partial "short-text" .Params.blurb}} -->
 
 {{ partial "2-up" .Params }}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "imageUrl" "img/home-about-section.jpg" "buttonText" "Read more" "buttonLink" "/values") }}
 
 {{ partial "blog" . }}
 
