@@ -16,10 +16,16 @@ export default class PostPreview extends React.Component {
     return <div>
         <Jumbotron image={image} title={entry.getIn(["data", "title"])} subtitle={entry.getIn(["data", "subtitle"])}/>
 
-        <div className="bg-grey-1 pv4">
-          <div className="flex-l mhn1-l ph3 center mw7">
-            <h2 className="f2 b lh-title mb2 w-40-l">{entry.getIn(["data", "blurb", "heading"])}</h2>
-            <p className="w-60-l mb0">{entry.getIn(["data", "blurb", "text"])}</p>
+        <div class="bg-grey-1 pv4 ph3">
+          <div class="flex-m mhn3-m mb4">
+            <div class="ph3-m w-50-m order-last-m">
+              <img src={getAsset(entry.getIn(["data", "homeIntro", "image"]))} alt="" class="db mb2"/>
+            </div>
+
+            <div class="ph3-m w-50-m">
+              <h3 class="f3 b lh-title mb1">{entry.getIn(["data", "homeIntro", "heading"])}</h3>
+              <p>{entry.getIn(["data", "homeIntro", "text"])}</p>
+            </div>
           </div>
         </div>
 
@@ -35,13 +41,13 @@ export default class PostPreview extends React.Component {
               </div>)}
             </div>
 
-            <div className="tc">
+            {/* <div className="tc">
               <a href="#" className="btn raise">See all products</a>
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <div className="bg-grey-1 pv4">
+        {/* <div className="bg-grey-1 pv4">
           <div className="ph3 mw7 center">
 
             <div className="flex-l mhn2-l">
@@ -61,7 +67,7 @@ export default class PostPreview extends React.Component {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
 
     </div>
