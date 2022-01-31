@@ -1,0 +1,7 @@
+{{ range where .Site.Pages "Slug" "contact" }}
+
+    {{ range where .Params.contact_entries "key" "hours"  }}
+        {{ .text | markdownify }}
+    {{ end }}
+
+{{ end }}
