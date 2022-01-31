@@ -6,7 +6,7 @@ homeIntro:
   heading: Chi sono
   image: img/laura.jpg
   text: |-
-    Ciao sono Laura, titolare di **Stilnovo**.
+    Ciao sono Laura, titolare di **Stilnovo Parrucchiera Unisex**.
 
     Prova andare a capo
 products:

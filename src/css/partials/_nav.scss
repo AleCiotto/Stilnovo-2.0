@@ -57,8 +57,9 @@
                 flex-basis: 100%;
 
                 .selected {
-                    border-bottom: 1px solid var(--white);
-                    display: inline-block;
+                    text-decoration: underline;
+                    // border-bottom: 1px solid var(--black);
+                    // display: inline-block;
                 }
             }
         }
