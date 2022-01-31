@@ -1,0 +1,7 @@
+{{ range where .Site.Pages "Slug" "contact" }}
+
+    {{ range where .Params.contact_entries "key" "address"  }}
+        {{ .text | safeHTML }}
+    {{ end }}
+
+{{ end }}

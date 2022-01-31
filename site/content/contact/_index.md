@@ -1,14 +1,14 @@
 ---
-title: "Contattaci"
-logo: "/img/logo.svg"
-type: "page"
-slug: "contact"
+title: Contattaci
+logo: /img/logo.svg
+type: page
+slug: contact
 contact_entries:
   - heading: Dove siamo
+    key: address
     text: |-
-      Via Marzabotto 10/D, 40017
-
-      San Giovanni in Persiceto (BO)
+      Via Marzabotto 10/D, 40017 <br>
+      San Giovanni in Persiceto (BO) <br>
   - heading: Orario
     key: hours
     text: |-
@@ -20,13 +20,4 @@ contact_entries:
       Sabato: **08:00 - 15:00**\
       Domenica: **Chiuso**
 ---
-
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
-
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
-
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+Qui sotto trovi tutti i nostri contatti. Vieni a trovarci, chiamaci o scrivici su WhatsApp!
