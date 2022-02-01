@@ -3,7 +3,7 @@
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3 cstm-underline relative">{{.Title}}</h1>
     <div class="cms mw6">
-        {{ with .Description }}
+        {{ if .Description }}
             <p>{{ .Description }}</p>
         {{ end }}
         {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
