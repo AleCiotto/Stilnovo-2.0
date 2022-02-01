@@ -78,3 +78,34 @@
     box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
   }
 }
+
+
+@media (--breakpoint-not-small) {
+  .bg-grey-1-ns {
+    background-color: var(--grey-1);
+  }
+
+  .primary-ns {
+    color: var(--primary);
+  }
+}
+
+@media (--breakpoint-medium) {
+  .bg-grey-1-m {
+    background-color: var(--grey-1);
+  }
+
+  .primary-m {
+    color: var(--primary);
+  }
+}
+
+@media (--breakpoint-large) {
+  .bg-grey-1-l {
+    background-color: var(--grey-1);
+  }
+
+  .primary-l {
+    color: var(--primary);
+  }
+}

@@ -1,4 +1,4 @@
-<header class="header bg-white relative z-999">
+<header class="header bg-white relative z-999 fixed top-0 right-0 left-0">
 	<div class="header__inner flex justify-between items-center center">
 
 		<!-- Social -->
@@ -27,7 +27,7 @@
 	
 	<!-- Primary Nav -->
 	<nav class="bg-white">
-		<ul class="black flex justify-center flex-wrap">
+		<ul class="black flex justify-center flex-wrap pa4 pa2-m">
 			<!-- <li><a href="/products" class="no-underline db">Products</a></li>
 	
 			<li><a href="/values" class="no-underline db">Values</a></li>
@@ -39,14 +39,14 @@
 			<!-- Try to build dynamic menu -->
 			{{ $currentPage := . }}
 			{{ range where .Site.Pages "Type" "page" }}
-				<li class="mb3 mb0-nm">
+				<li class="pa3">
 					<a href="{{ .RelPermalink }}" class="no-underline db {{ cond (eq $currentPage.Title .Title) "selected" "" }}">
 						{{ .Title }}
 					</a>
 					{{ if not (eq .Slug "home") | and .Pages }}
-						<ul class="pa3">
+						<ul class="flex-l justify-center flex-wrap bg-grey-1-l">
 							{{ range .Pages }}
-								<li class="mb3 mb0-nm">
+								<li class="ma3 ma4-m primary-l">
 									<a href="{{ .RelPermalink }}" class="no-underline db {{ cond (eq $currentPage.Title .Title) "selected" "" }}">
 										{{ .Title }}
 									</a>
