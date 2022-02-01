@@ -2,6 +2,7 @@
 title: Homepage
 subtitle: Support sustainable farming while enjoying a cup
 image: img/butterfly.jpg
+slug: home
 homeIntro:
   heading: Chi sono
   image: img/laura.jpg
