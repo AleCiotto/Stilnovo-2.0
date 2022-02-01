@@ -5,10 +5,15 @@ image: img/butterfly.jpg
 homeIntro:
   heading: Chi sono
   image: img/laura.jpg
-  text: |-
-    Ciao sono Laura, titolare di **Stilnovo Parrucchiera Unisex**.
+  text: >-
+    Ciao sono Laura, titolare di **Stilnovo Parrucchiera Unisex**.  
 
-    Prova andare a capo
+    Adoro pensare sempre a nuovi progetti, creazioni e rendervi felici proponendovi **professionalità, consulenza d' immagine, passione e creatività**.  
+
+    Utilizzo prodotti Biologici ed Ecosostenibili.
+
+
+    Sono sempre pronta ad accogliervi, vieni a trovarmi!
 products:
   - image: img/oxy_revolution.jpg
     text: We sell green and roasted coffee beans that are sourced directly from

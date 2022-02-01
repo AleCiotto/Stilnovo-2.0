@@ -21,7 +21,7 @@ body {
  }
 
 p {
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
   max-width: 32rem;
 }
 
