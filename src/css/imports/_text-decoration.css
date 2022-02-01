@@ -20,3 +20,18 @@
   .underline-l {    text-decoration: underline; }
   .no-underline-l { text-decoration: none; }
 }
+
+.cstm-underline {
+  width: fit-content;
+}
+
+.cstm-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    height: 2px;
+    max-width: 300px;
+    width: 100%;
+}
