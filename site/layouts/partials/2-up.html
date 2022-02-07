@@ -1,11 +1,15 @@
-<div class="bg-off-white pv4">
+<div class="2-up bg-off-white pv4">
   <div class="ph3 mw7 center">
-    <h2 class="f2 b lh-title mb2">{{.intro.heading}}</h2>
-    <p class="mb4 mw6">{{.intro.text}}</p>
+    {{ if .intro.heading }} <h2 class="f2 b lh-title mb2">{{.intro.heading}}</h2> {{ end }}
+    {{ if .intro.text }} <p class="mb4 mw6">{{.intro.text}}</p> {{ end }}
 
-    <div class="flex-ns mhn2-ns mb3">
+    <div class="flex-ns flex-wrap-ns mhn2-ns">
       {{ range .products }}
-      <div class="ph2-ns w-50-ns">
+      <div class="2-up__product ph2-ns w-100 w-50-l mb4 mb0-l">
+        {{ if .title }}
+          <h3 class="cstm-underline relative b mb3 mb4-l f4 lh-title">{{.title}}</h3>
+        {{ end }}
+        <!-- // TODO: make images smart  -->
         <img src="{{.image}}" alt="" class="center db mb3" style="width: 240px">
         <p>{{.text}}</p>
       </div>

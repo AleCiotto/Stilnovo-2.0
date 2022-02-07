@@ -39,11 +39,10 @@ collections: # A list of collections the CMS should be able to edit
           #     {label: "Heading", name: "heading", widget: string},
           #     {label: "Text", name: "text", widget: "text"}]}
           - {label: "Products", name: products, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          # - {label: "Values", name: "values", widget: "object", fields: [
-              # {label: "Heading", name: "heading", widget: string},
-              # {label: "Text", name: "text", widget: "text"}
+              {label: "Title", name: "title", widget: "string", required: false},
+              {label: "Image", name: "image", widget: "image", required: false},
+              {label: "Text", name: "text", widget: "text", required: false},
+              {label: "Link", name: "link", widget: "relation", required: false, collection: "pages", value_field: "*", search_fields: ["*"]}]}
       - file: "site/content/contattaci/_index.md"
         label: "Contattaci"
         name: "contattaci"

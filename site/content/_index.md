@@ -17,14 +17,14 @@ homeIntro:
     Sono sempre pronta ad accogliervi, vieni a trovarmi!
 products:
   - image: img/oxy_revolution.jpg
-    text: We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
+    text: Eksperience é la prima linea di prodotti professionali basata sulla
+      talassoterapia. Prevede l' uso a scopo terapeutico dell' acqua di mare e
+      di altri ingredienti di Origine Marina  dalle potenti proprietá benefiche.
+    title: Il potere del mare nelle nostre mani
   - image: img/oxy_revolution_2.jpg
-    text: We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
+    text: "Una vera scoperta scinetifica che garantisce risultati immediati e
+      pazzeschi: colore fino a 2 volte piú intenso, rigenera il capello dopo la
+      decolorazione, raddoppia la luminositá, aumenta la corpositá, raddoppia la
+      tenuta della piega."
+    title: Oxy station
 ---

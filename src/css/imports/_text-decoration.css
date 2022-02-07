@@ -32,6 +32,6 @@
     left: 0;
     background-color: var(--primary);
     height: 2px;
-    max-width: 300px;
+    /* max-width: 300px; */
     width: 100%;
 }
