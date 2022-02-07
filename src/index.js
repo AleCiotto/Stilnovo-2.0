@@ -10,6 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
         event.currentTarget.closest('header').classList.toggle('open');
     });
 
+    // Contact form
+    let handleSubmit = e => {
+      e.preventDefault()
+      let myForm = document.querySelector(".contact-us__form");
+      let formData = new FormData(myForm)
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      }).then(() => {
+        myForm.classList.add('success');
+        myForm.innerHTML = 'Grazie per averci contattato, proveremo a rispondere il prima possibile!';
+      }).catch((error) =>
+        alert(error))
+    }
+  
+    const contactUsForm = document.querySelector(".contact-us__form");
+    if (contactUsForm) {
+        contactUsForm.addEventListener("submit", handleSubmit);
+    }
+
     console.log(`
       ---------------------------------
       |                                 |

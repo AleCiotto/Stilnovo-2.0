@@ -1,26 +1,38 @@
 {{ define "main" }}
 
 <div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
-
+	<div class="center mw8 pv3">
 		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div class="flex-auto pr3-ns">
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					{{ if (eq .key "address") }}
-						<p>{{ .text | safeHTML }}</p>
-					{{ else }}
-						<p>{{ .text | markdownify }}</p>
-					{{ end }}
+		<div class="flex-l mb3">
+			<div class="w-100 w-50-l flex-wrap-ns flex-ns">
+				<div class="w-100 pr3-ns">
+					{{ .Content }}
 				</div>
-			{{ end }}
-		</div>
+				{{ range .Params.contact_entries }}
+					<div class="flex-auto pr3-ns">
+						<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
+						{{ if (eq .key "address") }}
+							<p>{{ .text | safeHTML }}</p>
 
-		{{ partial "map" . }}
+							<span class="db">
+								Telefono: <a href="tel:0510065330">051 0065330</a>
+							</span>
+							<span class="db">
+								Cellulare: <a href="tel:3314617048">331 4617048</a>
+							</span>
+							<span class="db">
+								Whatsapp: <a href="https://wa.me/+393314617048" class="underline">331 4617048</a>
+							</span>
+						{{ else }}
+							<p>{{ .text | markdownify }}</p>
+						{{ end }}
+					</div>
+				{{ end }}
+			</div>
+			<div class="w-100 w-50-l mb5 mb0-l">
+				{{ partial "map" . }}
+			</div>
+		</div>
 
 		{{ partial "contact-form" . }}
 

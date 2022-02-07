@@ -1,33 +1,33 @@
 <!-- Contact -->
 <div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
+  <h4 class="f3 b lh-title mb3 mb4-l center cstm-underline relative">Contattaci</h4>
 
-  <form action="">
-    <div class="flex-l mhn1-l">
-      <!-- Name -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" id="name" name="name" placeholder="Name" class="w-100 mb2">
-          <label for="name">Name</label>
-        </fieldset>
-      </div>
-      <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="email" id="email" name="email" placeholder="Email" class="w-100 mb2">
-          <label for="email">Email</label>
-        </fieldset>
-      </div>
-    </div>
+  <form class="contact-us__form form flex flex-column flex-row-ns flex-wrap-ns" name="appuntamenti-web" data-netlify="true">
+      <span class="form__input w-50-ns mb2 pr2-ns relative">
+        <input type="text" name="name" required placeholder="Nome" id="form__name" />
+        <label for="form__name">Nome</label>
+      </span>
 
-    <!-- Message -->
-    <fieldset>
-      <textarea id="message" name="message" placeholder="Your message" rows="8" cols="80" class="w-100"></textarea>
-      <label for="message">Your message</label>
-    </fieldset>
-    <!-- Button -->
-    <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
-    </div>
+      <span class="form__input w-50-ns mb2 pl2-ns relative">
+        <input type="text" name="surname" required placeholder="Cognome" id="form__surname" />
+        <label class="ml2-ns" for="form__surname">Cognome</label>
+      </span>
+
+      <span class="form__input w-50-ns mb2 pr2-ns relative">
+        <input type="email" name="email" required placeholder="Email" id="form__email" />
+        <label for="form__email">Email</label>
+      </span>
+
+      <span class="form__input w-50-ns mb2 pl2-ns relative">
+        <input type="tel" name="telephone" placeholder="Telefono" id="form__phone" />
+        <label class="ml2-ns" for="form__email">Telefono</label>
+      </span>
+
+      <span class="form__input w-100 mb2 relative">
+        <textarea name="message" required id="form__message" cols="30" rows="8" placeholder="Messaggio"></textarea>
+        <label for="form__message">Messaggio</label>
+      </span>
+
+      <input type="submit" value="Invia">
   </form>
 </div>

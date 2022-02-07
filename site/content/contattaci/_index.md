@@ -1,6 +1,6 @@
 ---
 title: Contattaci
-logo: /img/logo.svg
+logo: img/logo_black.png
 type: page
 slug: contact
 contact_entries:

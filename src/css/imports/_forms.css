@@ -22,10 +22,11 @@ input, textarea {
   line-height: 1.25;
   position: relative;
   transition: var(--hover-transition);
+  width: 100%;
   z-index: 2;
-  &:focus {
+  /* &:focus {
     background-color: var(--white);
-  }
+  } */
   &:focus + label {
     opacity: 1;
     pointer-events: auto;

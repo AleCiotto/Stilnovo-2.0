@@ -1,5 +1,7 @@
 {{ if not .Params.contact_entries }}
-	{{ partial "map" . }}
+	<div class="vh-50 vh-25-m" style="max-height: 400px;">
+		{{ partial "map" . }}
+	</div>
 {{ end }}
 <footer class="bg-grey-1 ph3 pv3">
 	<div class="footer__contacts">

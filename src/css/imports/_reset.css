@@ -65,3 +65,7 @@ button {
 a {
 	color: inherit;
 }
+
+* {
+	box-sizing: border-box;
+}
