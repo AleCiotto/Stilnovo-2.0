@@ -1,7 +1,7 @@
 ---
-title: Homepage
-subtitle: Support sustainable farming while enjoying a cup
-image: img/butterfly.jpg
+title: Stilnovo
+subtitle: Parrucchiera Unisex a San Giovanni in Persiceto
+image: img/logo_white.jpg
 slug: home
 homeIntro:
   heading: Chi sono
