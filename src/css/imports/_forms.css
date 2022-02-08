@@ -14,7 +14,7 @@ fieldset
   padding: 0;
 }
 
-input, textarea {
+input, textarea, select {
   background-color: var(--grey-2);
   border-radius: var(--border-radius);
   padding: 12px 16px 10px;
@@ -32,6 +32,11 @@ input, textarea {
     pointer-events: auto;
     transform: translateY(-120%);
   }
+}
+
+select {
+  appearance: none;
+  border: 0;
 }
 
 ::-webkit-input-placeholder {

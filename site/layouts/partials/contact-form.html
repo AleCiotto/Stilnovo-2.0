@@ -23,11 +23,24 @@
         <label class="ml2-ns" for="form__email">Telefono</label>
       </span>
 
+      <span class="form__input w-50-ns mb2 pr2-ns relative">
+        <select name="topic" id="topic" required>
+          <option value="">Seleziona l' argomento</option>
+          {{ with .Site.GetPage "/servizi" }}
+            {{ range .Pages }}
+              <option value="{{.Title}}">{{.Title}}</option>
+            {{ end }}
+          {{ end }}
+          <option value="altro">Altro</option>
+        </select>
+        <label class="mr2-ns" for="form__email">Argomento</label>
+      </span>
+
       <span class="form__input w-100 mb2 relative">
         <textarea name="message" required id="form__message" cols="30" rows="8" placeholder="Messaggio"></textarea>
         <label for="form__message">Messaggio</label>
       </span>
 
-      <input type="submit" value="Invia">
+      <input type="submit" value="Invia" class="btn">
   </form>
 </div>

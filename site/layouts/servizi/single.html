@@ -1,5 +1,4 @@
 {{ define "main" }}
-
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3 cstm-underline relative">{{.Title}}</h1>
     <div class="cms mw6">
@@ -7,7 +6,21 @@
             <p>{{ .Description }}</p>
         {{ end }}
         {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+
         {{ .Content }}
+
+        <div class="flex flex-column">
+          {{ range .Params.serviceinfo }}
+            <div class="flex primary pa2">
+              <svg width="25px" height="25px" class="dib w-auto">
+                <use xlink:href="#icons-{{.icon}}"></use>
+              </svg>
+              <span class="flex-grow-1 ml2">{{.text}}</span>
+            </div>
+          {{ end }}
+        </div>
     </div>
   </div>
+
+  {{ partial "svg-services" . }}
 {{ end }}

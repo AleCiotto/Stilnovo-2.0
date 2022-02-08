@@ -105,3 +105,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Descrizione (in servizi), name: descrizione, widget: markdown, required: false, comment: "Testo usato nella pagina servizi"}
       - {label: Image, name: image, widget: image, required: false}
       - {label: Body, name: body, widget: markdown}
+      - label: "Info servizio"
+        name: serviceInfo
+        widget: list
+        fields:
+          - {label: Testo, name: text, widget: string}
+          - {label: Icona, name: icon, widget: select, options: ["time", "euro", "pin"]}
