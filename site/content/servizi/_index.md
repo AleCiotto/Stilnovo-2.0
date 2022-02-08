@@ -1,15 +1,12 @@
 ---
 title: Servizi
-logo: ""
 type: page
 order: 1
+image: ""
 ---
-
 We’d love to get in touch with you and hear your ideas and
 questions. We strive to grow and improve constantly and your feedback
 is valuable for us.
-
-<h3 class="f4 b lh-title mb2">I nostri servizi</h3>
 
 You can also use the form below for any inquiries about coffee
 availability, monthly subscriptions and scheduling a 1-on-1 session

@@ -5,11 +5,11 @@
 		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
 		<div class="flex-l mb3">
 			<div class="w-100 w-50-l flex-wrap-ns flex-ns">
-				<div class="w-100 pr3-ns">
+				<div class="w-100 pr3-ns mb3 mb1-l">
 					{{ .Content }}
 				</div>
 				{{ range .Params.contact_entries }}
-					<div class="flex-auto pr3-ns">
+					<div class="flex-auto pr3-ns mb3 mb1-l">
 						<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
 						{{ if (eq .key "address") }}
 							<p>{{ .text | safeHTML }}</p>

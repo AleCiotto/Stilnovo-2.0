@@ -1,1 +1,2 @@
 .list { list-style-type: none; }
+.contain-list-disc ul { list-style-type: disc; margin-left: 1rem; margin-bottom: 1rem; }

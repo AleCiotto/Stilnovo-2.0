@@ -2,10 +2,24 @@
 
 <div class="ph3 bg-off-white">
 	<div class="center mw6 pv3">
+		<h1 class="f2 lh-title b cstm-underline relative mb4">{{.Title}}</h1>
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+		{{ if .Content }}
+			{{ .Content }}
+		{{ end }}
 
-		{{ .Content }}
+		{{ if .Params.Image }} 
+			<img src="{{ .Params.Image }}" alt="" class="db center pv4"> 
+		{{ end }}
+
+		{{ range .Pages }}
+			<div class="service mv4 contain-list-disc">
+				<img src="{{ .Params.Image }}" alt="" class="db center pt4 pb2">
+				<h2 class="f4 lh-title b mb2 cstm-underline relative">{{.Params.Title}}</h2>
+				{{.Params.Descrizione | markdownify}}
+				<a href="{{.RelPermalink}}" class="btn raise center w-100 w-auto-ns mt3">Scopri di piú</a>
+			</div>
+		{{ end }}
 	</div>
 </div>
 

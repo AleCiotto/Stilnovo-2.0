@@ -68,7 +68,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "servizi"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image, required: false}
+          - {label: Image, name: image, widget: image, required: false}
           - {label: Body, name: body, widget: markdown}
       - file: "site/content/products/_index.md"
         label: "Products Page"
@@ -102,6 +102,6 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Description, name: description, widget: string, required: false}
+      - {label: Descrizione (in servizi), name: descrizione, widget: markdown, required: false, comment: "Testo usato nella pagina servizi"}
       - {label: Image, name: image, widget: image, required: false}
       - {label: Body, name: body, widget: markdown}
