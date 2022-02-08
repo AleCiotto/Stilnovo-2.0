@@ -1,12 +1,13 @@
-<div class="flex-m mhn3-m mb4 mw7 center">
+<div class="flex-l mb5 mw8">
 
-  <div class="ph3-m w-50-m">
+  <div class="ph3-l w-40-l">
     <img src="{{.imageUrl}}" alt="" class="db mb2">
   </div>
 
-  <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
-    <p>{{.text}}</p>
+  <div class="ph3-m w-50-l flex-grow-1-l">
+    <h3 class="f3 b lh-title mb1 primary">{{.title}}</h3>
+    <div class="contain-list-disc">{{.text | markdownify}}</div>
+    <a href="{{.link}}" class="btn raise center w-100 w-auto-l mt3">Scopri di piú</a>
   </div>
 
 </div>
