@@ -14,10 +14,10 @@
         <p>{{.text}}</p>
       </div>
       {{ end }}
-    </div>
 
-    {{/*  <div class="tc">
-      <a href="/products" class="btn raise">See all products</a>
-    </div>  */}}
+      {{ if .link }}
+        <a href="{{.link}}" class="btn raise center w-100 w-auto-ns mt4">{{.linkText}}</a>
+      {{ end }}
+    </div>
   </div>
 </div>

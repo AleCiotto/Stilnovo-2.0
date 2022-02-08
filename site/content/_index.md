@@ -27,4 +27,6 @@ products:
       decolorazione, raddoppia la luminositá, aumenta la corpositá, raddoppia la
       tenuta della piega."
     title: Oxy station
+link: /servizi/
+linkText: Scopri di piú
 ---

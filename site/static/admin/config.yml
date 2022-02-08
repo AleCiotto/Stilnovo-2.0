@@ -42,7 +42,10 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Title", name: "title", widget: "string", required: false},
               {label: "Image", name: "image", widget: "image", required: false},
               {label: "Text", name: "text", widget: "text", required: false},
-              {label: "Link", name: "link", widget: "relation", required: false, collection: "pages", value_field: "*", search_fields: ["*"]}]}
+              # {label: "Link", name: "link", widget: "string", required: false}
+              ]}
+          - {label: "Link", name: "link", widget: "string", required: false}
+          - {label: "LinkText", name: "linkText", widget: "string", required: false}
       - file: "site/content/contattaci/_index.md"
         label: "Contattaci"
         name: "contattaci"
